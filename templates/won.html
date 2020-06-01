@@ -1,0 +1,11 @@
+<html>
+    <header>You won!</header>
+   <body>
+      Congratulations!!
+      The word is:[{{displayword}}]
+      <img src="{{url_for('static', filename='874f289a-b5d7-493c-8479-6bf0a4b85b69_rw_600.gif')}}" align="middle" width="300" height="300" />
+      <form action = "{{url_for('start')}}" method = "GET">
+         <p>New Game?</p><input type = "submit" value = "RESET" /></p>
+      </form>
+   </body>
+</html>

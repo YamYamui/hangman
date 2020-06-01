@@ -1,0 +1,11 @@
+<html>
+    <header>You lose!</header>
+   <body>
+      The word is:[{{displayword}}]
+      Try Again next time!!
+      <img src="{{url_for('static', filename='76241638-6cbc-471a-bb70-f4787367d98c_rw_1200.gif')}}" align="middle" width="300" height="300" />
+      <form action = "{{url_for('start')}}" method = "GET">
+         <p>New Game?</p><input type = "submit" value = "RESET" /></p>
+      </form>
+   </body>
+</html>

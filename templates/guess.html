@@ -1,0 +1,44 @@
+<html>
+   <body>
+      <h1>Welcome to KT Hangman!!</h1> 
+      <h2>The topic: Fruits&Veggies!</h2>
+      <h3>Your word: [{{display}}]</h2> 
+      <h4>Number of guesses left: [{{displayguess}}]</h3>
+
+      {% if displayguess == 10 %}
+         <img src="{{url_for('static', filename='IMG-1157.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}  
+      {% if displayguess == 9 %}
+         <img src="{{url_for('static', filename='IMG-1158.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}  
+      {% if displayguess == 8 %}
+         <img src="{{url_for('static', filename='IMG-1159.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+      {% if displayguess == 7 %}
+         <img src="{{url_for('static', filename='IMG-1160.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+      {% if displayguess == 6 %}
+         <img src="{{url_for('static', filename='IMG-1161.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+      {% if displayguess == 5 %}
+         <img src="{{url_for('static', filename='IMG-1162.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+      {% if displayguess == 4 %}
+         <img src="{{url_for('static', filename='IMG-1163.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+      {% if displayguess == 3 %}
+         <img src="{{url_for('static', filename='IMG-1164.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+      {% if displayguess == 2 %}
+         <img src="{{url_for('static', filename='IMG-1165.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+      {% if displayguess == 1 %}
+         <img src="{{url_for('static', filename='IMG-1166.jpg')}}" align="middle" width="300" height="300" />
+      {% endif %}
+
+      <form action = "{{url_for('result')}}" method = "POST">
+         <p>Your Guess <input type = "text" name = "guesschar" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+   </body>
+</html>
