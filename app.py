@@ -4,7 +4,8 @@ from random import randint
 app = Flask(__name__)
 num_guess = 10
 
-#added this line after initial commit
+word = 'BROCCOLI'  # the word to be guessed
+guessstr = '_'*len(word)  # guessstr is a string of with the guesses filled in
 
 def wordgen(word):
    value = randint(0, 13)
@@ -17,14 +18,9 @@ def wordgen(word):
       i = i + 1
    word = word[:len(word)-1]
    return word
-   print("TST",word)
-
-word = 'BROCCOLI'
-guessstr = '_'*len(word)
 
 def checkchar(char, thestring, num_guess):
    # complete  = true / false
-   # guessstatus is a string of with the guesses filled in
    complete = False
    new_empty = ""
    i = 0
