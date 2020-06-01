@@ -4,6 +4,7 @@ from random import randint
 app = Flask(__name__)
 num_guess = 10
 
+#added this line after initial commit
 
 def wordgen(word):
    value = randint(0, 13)
