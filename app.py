@@ -52,6 +52,7 @@ def start():
 def result():
    global guessstr
    global num_guess
+   global word
    result = request.form
    gamestatus = checkchar(result["guesschar"], guessstr, num_guess)  # have a char, check the game complete
    num_guess = gamestatus[2]
